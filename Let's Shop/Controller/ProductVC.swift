@@ -61,6 +61,7 @@ class ProductVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
             previewVC.product = product
             let barBtn = UIBarButtonItem()
             barBtn.title = ""
+            barBtn.tintColor = .black
             navigationItem.backBarButtonItem = barBtn
             
         }

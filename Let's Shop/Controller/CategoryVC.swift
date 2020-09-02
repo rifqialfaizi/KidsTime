@@ -49,6 +49,7 @@ class CategoryVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         if let productVC = segue.destination as? ProductVC {
             let barBtn = UIBarButtonItem()
             barBtn.title = ""
+            barBtn.tintColor = .black
             navigationItem.backBarButtonItem = barBtn
             assert(sender as? Category != nil)
             productVC.initProductts(category: sender as! Category)

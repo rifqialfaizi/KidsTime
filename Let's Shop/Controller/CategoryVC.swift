@@ -60,3 +60,7 @@ class CategoryVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
  
 }
+
+
+// cek n ricek
+

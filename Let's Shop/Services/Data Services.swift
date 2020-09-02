@@ -53,6 +53,8 @@ class DataService {
     Product(title: "ocea", price: "IDR 499.000", imageName: "baju6.png"),
     ]
     
+    private let menchess = Product(title: "menchess", price: "IDR 400.000", imageName: "baju2.png")
+    
     func getCategories() -> [Category] {
         return categories
     }
@@ -86,5 +88,18 @@ class DataService {
     
     func getWinter() -> [Product] {
         return winter
+    }
+    
+    func getPreviews(forProductTitle title: String) -> Product {
+        switch title {
+        case "menchess":
+            return getMenchess()
+        default:
+            return getMenchess()
+        }
+    }
+    
+    func getMenchess() -> Product {
+        return menchess
     }
 }

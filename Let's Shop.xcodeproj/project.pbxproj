@@ -20,6 +20,7 @@
 		0715275F24FF50B100F726BB /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715275E24FF50B100F726BB /* ProductVC.swift */; };
 		0715276124FF51D400F726BB /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715276024FF51D400F726BB /* ProductCell.swift */; };
 		0715276324FF51E500F726BB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715276224FF51E500F726BB /* Product.swift */; };
+		07BCF6DE24FFC89600CAC364 /* PreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BCF6DD24FFC89600CAC364 /* PreviewVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		0715275E24FF50B100F726BB /* ProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVC.swift; sourceTree = "<group>"; };
 		0715276024FF51D400F726BB /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		0715276224FF51E500F726BB /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		07BCF6DD24FFC89600CAC364 /* PreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				0715275624FF30DA00F726BB /* CategoryVC.swift */,
 				0715275E24FF50B100F726BB /* ProductVC.swift */,
+				07BCF6DD24FFC89600CAC364 /* PreviewVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				0715273F24FF305900F726BB /* AppDelegate.swift in Sources */,
 				0715275724FF30DA00F726BB /* CategoryVC.swift in Sources */,
 				0715275F24FF50B100F726BB /* ProductVC.swift in Sources */,
+				07BCF6DE24FFC89600CAC364 /* PreviewVC.swift in Sources */,
 				0715274124FF305900F726BB /* SceneDelegate.swift in Sources */,
 				0715276124FF51D400F726BB /* ProductCell.swift in Sources */,
 				0715276324FF51E500F726BB /* Product.swift in Sources */,

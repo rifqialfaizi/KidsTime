@@ -23,7 +23,6 @@ class ProductVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         
     }
     
-    
     func initProductts(category: Category) {
         products = DataService.instance.getProducts(forCategoryTitle: category.title)
         navigationItem.title = category.title
@@ -31,6 +30,7 @@ class ProductVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
         return products.count
     }
     
@@ -41,7 +41,6 @@ class ProductVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
             
             cell.productImage.layer.cornerRadius = 10
             
-            
             return cell
             
         }
@@ -49,19 +48,23 @@ class ProductVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         return ProductCell()
     }
     
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let screenSize = UIScreen.main.bounds
-        
-        
-        return CGSize(width: (screenSize.width/2)-2, height: (screenSize.height/3))
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedProduct = indexPath.row
+        performSegue(withIdentifier: "PreviewVC", sender: nil)
     }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        
-        return 0
-        
 
+    var selectedProduct = 0
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let previewVC = segue.destination as? PreviewVC {
+            let product = products[selectedProduct]
+            previewVC.product = product
+            let barBtn = UIBarButtonItem()
+            barBtn.title = ""
+            navigationItem.backBarButtonItem = barBtn
+            
+        }
     }
+    
     
 }

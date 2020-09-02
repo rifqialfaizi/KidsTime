@@ -189,10 +189,92 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baju5" translatesAutoresizingMaskIntoConstraints="NO" id="2Mp-97-15r">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7uh-k7-Jaj">
+                                <rect key="frame" x="20" y="570" width="374" height="292"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ugb-0P-1vU">
+                                        <rect key="frame" x="19" y="17" width="123.5" height="138.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDR 400.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60A-qU-HVv">
+                                                <rect key="frame" x="0.0" y="0.0" width="123.5" height="106.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sandra nitte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZe-Oa-pfw">
+                                                <rect key="frame" x="0.0" y="114.5" width="102.5" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="8Qe-Mf-52h"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eI-ll-TtW">
+                                        <rect key="frame" x="304" y="30" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2k3-VI-HhC"/>
+                                            <constraint firstAttribute="width" constant="40" id="Isg-Pn-Ydu"/>
+                                        </constraints>
+                                        <state key="normal" image="heart"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This dress was made by a hundred persent cotton premium, it's sweat absorbent so you don't need to worry about. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1H-aa-S1p">
+                                        <rect key="frame" x="19" y="160.5" width="325" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="cIh-1n-uRH"/>
+                                            <constraint firstAttribute="width" constant="325" id="wpk-bt-SLX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QW6-3b-Czg">
+                                        <rect key="frame" x="19" y="186.5" width="118" height="30.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30.5" id="Q9Q-Il-Bci"/>
+                                        </constraints>
+                                        <state key="normal" title="Choose your size">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhW-rX-H52">
+                                        <rect key="frame" x="19" y="239" width="336" height="45"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="x5G-4Q-Op7"/>
+                                        </constraints>
+                                        <state key="normal" title="Add to bag">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="8eI-ll-TtW" firstAttribute="top" secondItem="7uh-k7-Jaj" secondAttribute="top" constant="30" id="ADE-iG-Vu6"/>
+                                    <constraint firstItem="mhW-rX-H52" firstAttribute="leading" secondItem="7uh-k7-Jaj" secondAttribute="leading" constant="19" id="HSU-Ty-08j"/>
+                                    <constraint firstAttribute="trailing" secondItem="8eI-ll-TtW" secondAttribute="trailing" constant="30" id="Hsu-KG-1PZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="D1H-aa-S1p" secondAttribute="trailing" constant="30" id="Ia5-NV-Qn8"/>
+                                    <constraint firstItem="QW6-3b-Czg" firstAttribute="top" secondItem="D1H-aa-S1p" secondAttribute="bottom" constant="5" id="U7Y-X3-YaT"/>
+                                    <constraint firstItem="ugb-0P-1vU" firstAttribute="leading" secondItem="7uh-k7-Jaj" secondAttribute="leading" constant="19" id="Z3m-fu-0JN"/>
+                                    <constraint firstItem="mhW-rX-H52" firstAttribute="top" secondItem="QW6-3b-Czg" secondAttribute="bottom" constant="22" id="axW-gB-1ce"/>
+                                    <constraint firstItem="QW6-3b-Czg" firstAttribute="leading" secondItem="7uh-k7-Jaj" secondAttribute="leading" constant="19" id="e36-gH-t6h"/>
+                                    <constraint firstItem="D1H-aa-S1p" firstAttribute="leading" secondItem="7uh-k7-Jaj" secondAttribute="leading" constant="19" id="g34-ne-o6e"/>
+                                    <constraint firstAttribute="trailing" secondItem="mhW-rX-H52" secondAttribute="trailing" constant="19" id="qdx-F5-TPx"/>
+                                    <constraint firstItem="ugb-0P-1vU" firstAttribute="top" secondItem="7uh-k7-Jaj" secondAttribute="top" constant="17" id="qzg-xM-MB7"/>
+                                    <constraint firstAttribute="bottom" secondItem="mhW-rX-H52" secondAttribute="bottom" constant="8" id="sDJ-2J-q58"/>
+                                    <constraint firstItem="D1H-aa-S1p" firstAttribute="top" secondItem="ugb-0P-1vU" secondAttribute="bottom" constant="5" id="zZb-mA-fZC"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="uyh-vh-x0j" firstAttribute="trailing" secondItem="7uh-k7-Jaj" secondAttribute="trailing" constant="20" id="0g0-FV-05D"/>
                             <constraint firstAttribute="bottom" secondItem="2Mp-97-15r" secondAttribute="bottom" id="R58-Tc-KxE"/>
                             <constraint firstItem="2Mp-97-15r" firstAttribute="trailing" secondItem="uyh-vh-x0j" secondAttribute="trailing" id="Yhb-Hn-VMU"/>
+                            <constraint firstItem="7uh-k7-Jaj" firstAttribute="top" secondItem="uyh-vh-x0j" secondAttribute="top" constant="430" id="bBo-UH-Awg"/>
+                            <constraint firstItem="7uh-k7-Jaj" firstAttribute="bottom" secondItem="uyh-vh-x0j" secondAttribute="bottom" id="cKC-1k-I0I"/>
+                            <constraint firstItem="7uh-k7-Jaj" firstAttribute="leading" secondItem="uyh-vh-x0j" secondAttribute="leading" constant="20" id="nLC-Fl-m2f"/>
                             <constraint firstItem="2Mp-97-15r" firstAttribute="leading" secondItem="uyh-vh-x0j" secondAttribute="leading" id="pfz-OT-RKc"/>
                             <constraint firstItem="2Mp-97-15r" firstAttribute="top" secondItem="8MQ-2P-8Mk" secondAttribute="top" id="wbV-CX-J0q"/>
                         </constraints>

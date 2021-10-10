@@ -9,7 +9,7 @@
 
 
 An application for your kids!
-## 🏃‍♂️ Getting Started
+## Getting Started
 
 ``` bash
 git clone https://github.com/rifqialfaizi/KidsTime.git
@@ -20,7 +20,7 @@ open LetsShop.workspace # or xed .
 - Test (⌘ + U)
 ```
 
-## 👨🏻‍💻 Kids Time! Design
+## Kids Time! Design
   <p float="left">
     <img src="./iPhone/iPhone.png" width="20%"/>
     <img src="./iPhone/iPhone Copy.png" width="20%"/> 
@@ -35,11 +35,11 @@ Feature:
 - Product Description
 
 
-## 🎉 Why I am building this?
+## Why I am building this?
 1. Explore Table View 🔥
 2. Learn new thing
 
 
 
-## 📱 Preview
+## Preview
 <img src="./Screen Record/Screen Record.gif" alt="alt text" width="210px" height="408px">

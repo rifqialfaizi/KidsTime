@@ -36,7 +36,7 @@ Feature:
 
 
 ## Why I am building this?
-1. Explore Table View 🔥
+1. Explore Table View
 2. Learn new thing
 
 
